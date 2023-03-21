@@ -81,3 +81,7 @@ GOOD LUCK �
      team2: 6.5,
    },
  };
+ 
+ //QUESTION 1 SOLUTION
+ const players1 = [...game.players[0]]
+ const players2 = [...game.players[1]];
