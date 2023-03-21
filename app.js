@@ -85,6 +85,9 @@ const game = {
 //QUESTION 1 SOLUTION
 const players1 = [...game.players[0]];
 const players2 = [...game.players[1]];
+console.log(players1)
+console.log(players2);
+
 
 //QUESTION 2 SOLUTION
 const [goalKeeper, ...fieldPlayers] = players1;
@@ -110,8 +113,12 @@ function printGoals(...players) {
         console.log(players[i])
     }
     const numOfGoals = players.length
-    console.log(`Total number of: ${numOfGoals}`)
+    console.log(`Total number of Goals: ${numOfGoals}`)
 }
 
 printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich')
 printGoals(...game.scored)
+
+//QUESTION 7 SOLUTION
+team1 > team2 && console.log('team 2 is more likely to win')
+team1 < team2 && console.log("team 1 is more likely to win");
