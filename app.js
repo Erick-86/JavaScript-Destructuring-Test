@@ -97,3 +97,13 @@ console.log(allPlayers);
 //QUESTION 4 SOLUTION
 const players1Final = [...game.players[0], "Thiago", "Coutinho", "Perisic"];
 console.log(players1Final)
+
+//QUESTION 5 SOLUTION
+const [team1, draw, team2] = [
+  game.odds.team1,
+  game.odds.x,
+  game.odds.team2,
+];
+console.log(team1)
+console.log(draw);
+console.log(team2);
