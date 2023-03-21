@@ -88,4 +88,8 @@ GOOD LUCK �
 
  //QUESTION 2 SOLUTION
 const [goalKeeper, ...fieldPlayers] = players1
- console.log(goalKeeper, fieldPlayers)
+console.log(goalKeeper, fieldPlayers)
+ 
+ //QUESTION 3 SOLUTION
+const allPlayers = [...game.players[0], ...game.players[1]]
+ console.log(allPlayers)
