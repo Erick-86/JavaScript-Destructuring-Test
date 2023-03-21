@@ -85,3 +85,7 @@ GOOD LUCK �
  //QUESTION 1 SOLUTION
  const players1 = [...game.players[0]]
  const players2 = [...game.players[1]];
+
+ //QUESTION 2 SOLUTION
+const [goalKeeper, ...fieldPlayers] = players1
+ console.log(goalKeeper, fieldPlayers)
