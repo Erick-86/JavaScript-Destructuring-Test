@@ -35,13 +35,26 @@ The players array start with 0 index so 1 is added to each array to make the nex
 */
 
 //QUESTION 2 SOLUTION
-console.log(`---Test 2: Question 2---`)
-const odds = Object.values(game.odds)
+console.log(`---Test 2: Question 2---`);
+const odds = Object.values(game.odds);
 
-let avgOdd = 0
+let avgOdd = 0;
 
-for (let i = 0; i < odds.length; i++){
-    avgOdd += odds[i]
+for (let i = 0; i < odds.length; i++) {
+  avgOdd += odds[i];
 }
 
-console.log(`The average score is ${avgOdd / odds.length}`)
+console.log(`The average score is ${avgOdd / odds.length}`);
+
+//QUESTION 3 SOLUTION
+console.log(`---Test 3: Question 3---`);
+const gameOdds = Object.entries(game.odds);
+for (const [team, odd] of gameOdds) {
+  const teamName = game[team];
+  const message =
+    teamName === undefined
+      ? `Odd of Draw: ${odd}`
+            : `Odd od victory ${teamName}: ${odd}`;
+    console.log(message)
+}
+
