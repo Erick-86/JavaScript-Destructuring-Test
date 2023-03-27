@@ -110,7 +110,7 @@ console.log(team2);
 //QUESTION 6 SOLUTION
 function printGoals(...players) {
     for (let i = 0; i < players.length; i++){
-        console.log(players[i])
+        console.log(`Goal ${i + 1}: ${players[i]}`)
     }
     const numOfGoals = players.length
     console.log(`Total number of Goals: ${numOfGoals}`)
