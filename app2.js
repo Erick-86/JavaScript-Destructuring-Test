@@ -33,3 +33,15 @@ Updated the printGoals() function to add the goal number
 console.log(`Goal ${i + 1}: ${players[i]}`)
 The players array start with 0 index so 1 is added to each array to make the next goal
 */
+
+//QUESTION 2 SOLUTION
+console.log(`---Test 2: Question 2---`)
+const odds = Object.values(game.odds)
+
+let avgOdd = 0
+
+for (let i = 0; i < odds.length; i++){
+    avgOdd += odds[i]
+}
+
+console.log(`The average score is ${avgOdd / odds.length}`)
